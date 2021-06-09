@@ -2,6 +2,25 @@
 
 Automated Get enrpoint on public api GET https://api.spacexdata.com/v4/launches/latest
 
+Used Restassured dependency in maven
+
+Folder structure
+
+src/main/java 
+com.SpaceX.config -config.properties (contains the get url required to be filled in test case) 
+com.SpaceX.base - TestSpaceXBase.java (containing logic for reading from the config.properties)
+
+src/test/java - com.SpaceX.test -contains different testcases on get endpoint
+
+Test cases
+Verify GET end point on  spacex latestlaunches gives the response 200
+Verify GET end point fails if url is tampered
+Verify GET end point response data 
+Verify GET end point with header passed
+Verify GET end point using hamcrest matchers
+
+
+
 Response -200
 
 {
